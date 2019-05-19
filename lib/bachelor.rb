@@ -53,19 +53,18 @@ end
 end
 
 def get_average_age_for_season(data, season)
-  # code here
-  total = 0
-  counter = 0
-  data.each do |season , array|
-    array.each do |people|
-      people.each do |k , v|
-        if k == "age"
-        counter += 1
-        total += v.to_f
-      end
+  # code here	  # code here
+age = 0
+count = 0
+  data[season].each do |hash|
+    hash.each do |k,v|
+      if k == "age"
+        count += 1
+        age += v.to_f
       end
     end
   end
-end
-return (total/counter).round
-end
+
+   answer = (age/count).round
+return answer
+end	end
