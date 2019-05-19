@@ -64,5 +64,5 @@ count = 0
       end
     end
   end
-return age/count.to_i
+return age/count.to_f.ceil
 end
