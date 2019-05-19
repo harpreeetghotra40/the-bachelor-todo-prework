@@ -64,5 +64,5 @@ count = 0
       end
     end
   end
-return (age/count).round + 1
+return age/count
 end
