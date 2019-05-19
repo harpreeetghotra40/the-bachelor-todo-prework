@@ -60,9 +60,9 @@ count = 0
     people.each do |k,v|
       if k == "age"
         count += 1
-        age += v
+        age += v.to_i
       end
     end
   end
 return (age/count).round
-end	
+end
