@@ -59,8 +59,10 @@ def get_average_age_for_season(data, season)
   data.each do |season , array|
     array.each do |people|
       people.each do |k , v|
+        if k == "age"
         counter += 1
-        total += people["age"]
+        total += v.to_f
+      end
       end
     end
   end
